@@ -124,9 +124,10 @@ import android.widget.Toast;
 
             }
         });
-        adb4.setNeutralButton("GO BACK", new DialogInterface.OnClickListener() {
+        adb4.setNeutralButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
+                et.setText("");
                 dialog.cancel();
             }
         });
